@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Brighton & Stove</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+          <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145083566-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-145083566-1');
+    </script>
+        <style type="text/css">* {cursor: url(http://cur.cursors-4u.net/food/foo-2/foo102.cur), auto !important;}</style><a href="http://www.cursors-4u.com/cursor/2006/03/04/foo102.html" target="_blank" title="Broccoli"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Broccoli" style="position:absolute; top: 0px; right: 0px;" /></a>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+    <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+           <h1><a href="index.html">Brighton and  <span class="logo_colour">Stove</span></a></h1>
+    
+          
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="getfood.html">Get Food</a></li>
+          <li><a href="yourlist.html">Your List </a></li>
+          <li><a href="ocr-2-text/webcam.html">Take a picture</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+<center>
+<body class="step1">
+
+<div class="container">
+    <h1><div class="alert alert-danger"><strong>If prompted, please select 'allow camera'. </strong> <span></span></div></h1>
+    <div class="jumbotron">
+        <div id="step1">
+            <h1><i class="glyphicon glyphicon-camera"></i></h1>
+
+             <p class="lead">
+                Use the button below to take a picture of your expiry date.
+               
+            </p>
+
+            <figure class="not-ready">
+                <video autoplay></video>
+            </figure>
+
+            <button class="btn btn-lg btn-success" disabled id="takePicture">Take a picture.</button>
+        </div>
+        <div id="step2">
+            
+
+            <p class="lead">
+                Use the crosshairs to crop the picture, then you can adjust the text using the sliders below so that it is clearly visible.
+                
+            </p>
+
+            <figure>
+                <canvas style="display:none"></canvas>
+                <img src=""/>
+            </figure>
+
+            <p>Brightness: <input type="range" min="0" max="100" id="brightness" value="20"></p>
+
+            <p>Contrast: <input type="range" min="0" max="100" id="contrast" value="90"></p>
+
+            <button class="btn btn-lg btn-success" id="adjust" disabled>Done</button>
+
+             </div>
+        <div id="step3">
+            
+
+            <p class="lead">You'll find the recognized text below.</p>
+
+            <figure>
+                <canvas></canvas>
+            </figure>
+
+            <blockquote>
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+                <p id="result"></p>
+                <footer></footer>
+            </blockquote>
+
+            <button class="btn btn-lg btn-default" id="go-back">Go back</button>
+            <button class="btn btn-lg btn-default" id="start-over">Start over</button>
+        </div>
+    </div>
+
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li class="active"><a href="#" data-step="1"> <i class="glyphicon glyphicon-camera"></i></a></li>
+            
+            <li class="disabled"><a href="#" data-step="3"> <i class="glyphicon glyphicon-text-height"></i></a></li>
+        </ul>
+       
+    </div>
+
+    <div class="row marketing">
+        <div class="col-lg-6">
+          <ul>
+            <li> Step 1 - Take a picture with your webcam </li>
+            <li> Step 2 - Crop and adjust </li>
+            <li> Step 3 - This site uses Tesseract.js to extract your expiry date </li>
+            </ul>
+
+ <div class="col-lg-6">
+            <h4>Support</h4>
+
+            <p>This demo requires <a href="http://caniuse.com/stream">getUserMedia</a> and <a
+                    href="http://caniuse.com/webgl">WebGL</a>. It should work on Chrome, Safari and
+                Edge. Both desktop and mobile.</p>
+
+          
+
+        </div>
+
+
+
+
+  </div>
+
+
+</center>
+        
+      
+        <div id="footer">
+          &copy;
+          </div>
+
+      
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="ocr-2-text/js/vendor/modernizr.min.js"></script>
+<script src="ocr-2-text/js/vendor/bootstrap.min.js"></script>
+<script src="ocr-2-text/js/vendor/jquery.Jcrop.js"></script>
+<script src='https://cdn.jsdelivr.net/gh/naptha/tesseract.js@v1.0.14/dist/tesseract.min.js'></script>
+<script src="ocr-2-text/js/vendor/glfx.min.js"></script>
+
+<script src="ocr-2-text/js/main.js"></script>
+
+        
+  </body>
+
+</html>

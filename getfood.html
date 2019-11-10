@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Brighton & Stove</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">* {cursor: url(http://cur.cursors-4u.net/food/foo-2/foo102.cur), auto !important;}</style><a href="http://www.cursors-4u.com/cursor/2006/03/04/foo102.html" target="_blank" title="Broccoli"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Broccoli" style="position:absolute; top: 0px; right: 0px;" /></a>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+      <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+           <h1><a href="index.html">Brighton and  <span class="logo_colour">Stove</span></a></h1>
+          <h2></h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="getfood.html">Get Food</a></li>
+          <li><a href="yourlist.html">Your List </a></li>
+          <li><a href="webcamtest.html">Quick Scan</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="site_content">
+      <center><h1> Hungry? Click the button below to request food!</h1>
+        <button onclick="myFunction()">Find me food!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your postcode:", "Only BN1, BN2, BN3, BN41, BN43 accepted at this time!");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "We are searching for you!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script></center>
+
+
+
+        
+
+
+
+       <center><h2> Food Banks In The Area </h2></center>
+        <ul>
+         <li>Bevendean Food Bank tel.: 01273 603698</li>
+         <li>Brighton Food Bank tel.: 01273 609484</li>
+         <li>Hangleton Food Bank tel.: 07990 631892</li>
+         <li>Vale Community Centre tel.: 01273 571573</li>
+         <li>Whitehawk Food Bank tel.: 07941 397648</li>
+        </ul>
+       
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=foodbanksinbrighton&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a></div><style>.mapouter{position:center;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+
+      <h4> General Help<br>Brighton Unemployed Centre Families Project tel.: 01273 601211</br></h4>
+    </div>
+
+    </div>
+
+
+        
+
+<div id="footer">
+          &copy;
+          </div>
+        
+  </body>
+
+</html>

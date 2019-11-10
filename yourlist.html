@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Brighton & Stove</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">* {cursor: url(http://cur.cursors-4u.net/food/foo-2/foo102.cur), auto !important;}</style><a href="http://www.cursors-4u.com/cursor/2006/03/04/foo102.html" target="_blank" title="Broccoli"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Broccoli" style="position:absolute; top: 0px; right: 0px;" /></a>
+        <script src="script.js"></script>
+        <script src="listScripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        
+    </head>
+
+    <body onload="loadList();">
+      <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+           <h1><a href="index.html">Brighton and  <span class="logo_colour">Stove</span></a></h1>
+          <h2></h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="getfood.html">Get Food</a></li>
+          <li><a href="yourlist.html">Your List </a></li>
+          <li><a href="webcamtest.html">Quick Scan</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+        <center><h1> Here you can add your Shopping List </h1>
+        <h2> Click below to scan your receipt. </h2>
+        <button onclick="location.href='webcamtest.html'" type="button">
+         Scan</button></center>
+
+</center>
+
+        <div id="myListDiv">
+          <div id="Header" class="header">
+            <h2>My Food List</h2>
+            <input type="text" id="nameInput" placeholder="Name of Product">
+            <input type="text" id="expireInput" placeholder="Expiry date [dd/mm/yyyy]">
+            <span onclick="newElement()" class="addBtn">Add</span>
+          </div>
+          <ul id="myUL"></ul>
+          <center><h2>Want to donate? Select item then click the Give Button!</h2>
+          <button onclick="alert('Added to Give List');" type="button">Give</button>
+          <br><br><br>
+          <a href="doThingsOnExpired.html" onclick="alert('Carrots nearly out of date!');centeredPopup(this.href,'myWindow','380','300','yes');return false" type="button">Magical Change Day Link (Just for Demonstration)</button></a>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+        
+<style>
+.yui3-button {
+    margin:10px 0px 10px 0px;
+    color: #fff;
+    background-color: #3476b7;
+}
+</style>
+
+
+
+<div id="footer">
+          &copy;
+          </div>
+        
+  </body>
+
+</html>
